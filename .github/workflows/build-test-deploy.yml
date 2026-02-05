@@ -26,10 +26,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
       # Run lint explicitly so failures are clear
-      - name: Run lint
-        run: npx next lint
       - name: Run npm install
         run: npm install
+      - name: Run lint
+        run: npx next lint
       - name: Run npm test
         run: npm test
   deploy:

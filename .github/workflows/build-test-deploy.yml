@@ -27,7 +27,7 @@ jobs:
         run: npm ci
       # Run lint explicitly so failures are clear
       - name: Run lint
-        run: npm run lint   # <-- must exist in package.json
+      - run: npx next lint
       - run: npm install
       - run: npm test
   deploy:

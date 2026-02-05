@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm install
+      - run: npm i -D eslint eslint-config-next
       - run: npm test
   deploy:
     needs: test
